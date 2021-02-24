@@ -1,0 +1,178 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;500&display=swap"); */
+@import url("https://cdn.rawgit.com/mfd/f3d96ec7f0e8f034cc22ea73b3797b59/raw/856f1dbb8d807aabceb80b6d4f94b464df461b3e/gotham.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "GothamPro", sans-serif;
+  color: #3b3e44;
+  overflow: hidden;
+}
+
+.logo {
+  width: 160px;
+  cursor: pointer;
+}
+.container {
+  margin: 0 auto;
+  padding: 1rem 8rem;
+}
+
+.flex-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav li,
+a {
+  list-style-type: none;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  color: rgb(0, 0, 0);
+}
+
+.nav-links {
+  display: flex;
+}
+
+.cart {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+header {
+  background-image: url(./asserts/ms-homepage-desktop.jpg);
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  box-sizing: content-box;
+}
+
+.heading {
+  color: #3b3e44;
+  text-align: center;
+  margin-top: 6rem;
+  margin-bottom: 10px;
+  font-size: 40px;
+  font-weight: 400;
+}
+.paragraph a,
+span {
+  text-align: center;
+  text-decoration: underline;
+  color: #3b3e44;
+}
+.underline {
+  text-align: center;
+}
+
+.btn-1 {
+  padding: 0.8rem 5rem;
+  background-color: #333237;
+  color: white;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+.btn-2 {
+  padding: 0.8rem 5rem;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  height: 67vh;
+  padding: 0 1rem 1.5rem 1rem;
+}
+.arrow {
+  width: 2rem;
+  cursor: pointer;
+}
+.arrow-main {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 1102px) {
+  .nav-links {
+    display: none;
+  }
+}
+
+.header-down-arrow {
+  margin-top: 1rem;
+  animation: pulse 2s 3s ease-out infinite;
+  position: absolute;
+  bottom: 2vh;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10;
+}
+
+.header-down-arrow img {
+  animation: fade-slide-up 1s 1s ease-out forwards;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Animations */
+
+@keyframes fade-slide-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-4rem);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fade-slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(4rem);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes pop-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-4rem) scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+    transform: none;
+  }
+  50% {
+    opacity: 0.8;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
