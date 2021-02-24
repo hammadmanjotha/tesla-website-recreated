@@ -108,6 +108,9 @@ span {
   .nav-links {
     display: none;
   }
+  .container {
+    padding: 1rem 2rem;
+  }
 }
 
 .header-down-arrow {
