@@ -117,7 +117,7 @@ span {
   margin-top: 1rem;
   animation: pulse 2s 3s ease-out infinite;
   position: absolute;
-  bottom: 2vh;
+  bottom: 1vh;
   left: 0;
   right: 0;
   text-align: center;
